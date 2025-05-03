@@ -1,15 +1,17 @@
+export type Timeframes = 'daily' | 'weekly' | 'monthly';
+
 export interface IActivity {
   title: string;
-  timeframes: Timeframes;
+  timeframes: TimeframesStructure;
 }
 
-export interface Timeframes {
-  daily: Daily;
-  weekly: Daily;
-  monthly: Daily;
+export interface TimeframesStructure {
+  daily: TimeframeData;
+  weekly: TimeframeData;
+  monthly: TimeframeData;
 }
 
-export interface Daily {
+export interface TimeframeData {
   current: number;
   previous: number;
 }

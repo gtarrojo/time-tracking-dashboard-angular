@@ -1,1 +1,28 @@
-<p>info-card works!</p>
+@for (activity of trackingData; track trackingData) {
+<article class="card__container">
+  <section class="card__info">
+    <div>
+      <p>{{ activity.title }}</p>
+      <p>{{ activity.timeframes[selectedTimeframe].current }}hrs</p>
+    </div>
+    <div>
+      <a href="">...</a>
+      <p>
+        Last
+        {{
+          [
+            selectedTimeframe === "daily"
+              ? "day"
+              : selectedTimeframe === "weekly"
+              ? "week"
+              : selectedTimeframe === "monthly"
+              ? "month"
+              : ""
+          ]
+        }}
+        - {{ activity.timeframes[selectedTimeframe].previous }}hrs
+      </p>
+    </div>
+  </section>
+</article>
+}

@@ -1,0 +1,17 @@
+.card__container {
+  border-radius: 15px;
+  overflow: hidden;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__info {
+  display: flex;
+  gap: 4rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  background-color: var(--navy-900);
+  width: 100%;
+}
