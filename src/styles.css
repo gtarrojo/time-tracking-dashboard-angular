@@ -123,3 +123,14 @@ progress {
 summary {
   display: list-item;
 }
+
+/* custom  */
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
