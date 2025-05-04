@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, Input } from '@angular/core';
 import { TrackingDataService } from '../../../services/tracking-data.service';
 import { IActivity, Timeframes } from '../../../interfaces/iactivity.interface';
 
@@ -9,11 +9,6 @@ import { IActivity, Timeframes } from '../../../interfaces/iactivity.interface';
   styleUrl: './info-card.component.css',
 })
 export class InfoCardComponent {
-  trackingData: IActivity[] = [];
-  trackingDataService = inject(TrackingDataService);
-  selectedTimeframe: Timeframes = 'daily';
-
-  ngOnInit() {
-    this.trackingData = this.trackingDataService.getAll();
-  }
+  @Input() activity!: IActivity;
+  @Input() selectedTimeframe!: Timeframes;
 }

@@ -1,4 +1,11 @@
 <div class="container">
   <section><app-nav></app-nav></section>
-  <section><app-info-card></app-info-card></section>
+  <section class="container--info">
+    @for (activity of trackingData; track trackingData) {
+    <app-info-card
+      [activity]="activity"
+      [selectedTimeframe]="selectedTimeframe"
+    ></app-info-card>
+    }
+  </section>
 </div>

@@ -4,7 +4,8 @@
   background-color: var(--navy-900);
   border-radius: 15px;
   overflow: hidden;
-  max-width: 600px;
+  max-width: 350px;
+  width: 100%;
 }
 
 /* user  */
