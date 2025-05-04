@@ -17,6 +17,30 @@
   border-radius: 15px 15px 0px 0px;
 }
 
+.work {
+  background-color: var(--orange-300);
+}
+
+.play {
+  background-color: var(--blue-300);
+}
+
+.study {
+  background-color: var(--pink-400);
+}
+
+.exercise {
+  background-color: var(--green-400);
+}
+
+.social {
+  background-color: var(--purple-700);
+}
+
+.self.care {
+  background-color: var(--yellow-300);
+}
+
 .card__info {
   display: flex;
   gap: 4rem;
