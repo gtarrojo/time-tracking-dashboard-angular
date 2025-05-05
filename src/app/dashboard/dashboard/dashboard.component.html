@@ -1,7 +1,9 @@
 <div class="container">
-  <section><app-nav></app-nav></section>
+  <section>
+    <app-nav (timeframeChange)="selectedTimeframe = $event"></app-nav>
+  </section>
   <section class="container--info">
-    @for (activity of trackingData; track trackingData) {
+    @for (activity of trackingData; track activity.title) {
     <app-info-card
       [activity]="activity"
       [selectedTimeframe]="selectedTimeframe"

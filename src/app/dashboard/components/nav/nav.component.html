@@ -8,9 +8,27 @@
   </section>
   <section class="nav__timeframe">
     <ul class="nav__timeframe__list">
-      <li class="nav__timeframe__li"><a href=""></a>Daily</li>
-      <li class="nav__timeframe__li"><a href=""></a>Weekly</li>
-      <li class="nav__timeframe__li"><a href=""></a>Monthly</li>
+      <li class="nav__timeframe__li">
+        <a
+          (click)="onTimeframeSelect('daily')"
+          [class.active]="currentTimeframe === 'daily'"
+          >Daily</a
+        >
+      </li>
+      <li class="nav__timeframe__li">
+        <a
+          (click)="onTimeframeSelect('weekly')"
+          [class.active]="currentTimeframe === 'weekly'"
+          >Weekly</a
+        >
+      </li>
+      <li class="nav__timeframe__li">
+        <a
+          (click)="onTimeframeSelect('monthly')"
+          [class.active]="currentTimeframe === 'monthly'"
+          >Monthly</a
+        >
+      </li>
     </ul>
   </section>
 </article>
