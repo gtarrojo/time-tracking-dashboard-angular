@@ -1,5 +1,11 @@
 <article class="card__container">
-  <div class="card__header" [class]="activity.title.toLowerCase()"></div>
+  <div class="card__header" [class]="activity.title.toLowerCase()">
+    <img
+      class="card__header__icon"
+      [src]="activity.title === 'Self Care' ? `icon-${activity.title.slice(0, 4).toLowerCase()}-${activity.title.slice(5).toLowerCase()}.svg` : `icon-${activity.title.toLowerCase()}.svg`"
+      alt=""
+    />
+  </div>
   <section class="card__info">
     <div class="card__container__col">
       <p>{{ activity.title }}</p>
