@@ -1,8 +1,9 @@
 .container {
-  max-width: 100%;
+  max-width: 350px;
   width: calc(100% - 10px);
   color: white;
   margin: 0 auto;
+  margin-top: 10rem;
 }
 
 .container--info {
@@ -14,4 +15,16 @@
 
 .container section {
   width: 100%;
+}
+
+@media (min-width: 700px) {
+  .container {
+    max-width: 612px;
+  }
+
+  .container--info {
+    display: grid;
+    grid-template-columns: repeat(3, 188px);
+    gap: 23px;
+  }
 }

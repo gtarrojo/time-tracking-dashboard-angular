@@ -2,14 +2,13 @@
   display: flex;
   flex-direction: column;
   border-radius: 15px;
-  max-width: 350px;
   width: 100%;
   position: relative;
+  margin-bottom: 2rem;
 }
 
 .card__header {
   height: 3rem;
-  background-color: orange;
   position: absolute;
   z-index: 1;
   width: 100%;
@@ -91,4 +90,26 @@
   display: block;
   font-size: 2rem;
   text-align: right;
+}
+
+@media (min-width: 700px) {
+  .card__info {
+    height: 180px;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .card__info__current {
+    font-size: 3rem;
+  }
+
+  .card__info__col {
+    position: relative;
+  }
+
+  .card__info__menu {
+    position: absolute;
+    top: -130px;
+    right: -30px;
+  }
 }
