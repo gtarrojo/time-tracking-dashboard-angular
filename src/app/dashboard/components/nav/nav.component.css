@@ -4,7 +4,6 @@
   background-color: var(--navy-900);
   border-radius: 15px;
   overflow: hidden;
-
   width: 100%;
 }
 
@@ -64,4 +63,36 @@
 
 .active {
   color: var(--white);
+}
+
+@media (min-width: 1240px) {
+  .nav__container {
+    width: 255px;
+    margin-right: 23px;
+    height: 448px;
+  }
+
+  .nav__user {
+    flex-direction: column;
+    margin: 0;
+    flex-basis: 70%;
+  }
+
+  .nav__user__img {
+    align-self: flex-start;
+  }
+
+  .nav__user__name {
+    color: var(--white);
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    white-space: wrap;
+  }
+
+  .nav__timeframe__list {
+    flex-direction: column;
+    gap: 1.25rem;
+    justify-content: center;
+  }
 }

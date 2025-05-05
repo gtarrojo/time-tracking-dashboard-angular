@@ -113,3 +113,13 @@
     right: -30px;
   }
 }
+
+@media (min-width: 1240px) {
+  .card__info__current {
+    font-size: 3rem;
+  }
+
+  .card__info__menu {
+    right: -80px;
+  }
+}

@@ -28,3 +28,18 @@
     gap: 23px;
   }
 }
+
+@media (min-width: 1240px) {
+  .container {
+    max-width: 1116px;
+    display: flex;
+  }
+
+  .container--info {
+    display: grid;
+    grid-template-columns: repeat(3, 255px);
+    gap: 23px;
+    margin: 0;
+    margin-top: 2.2rem;
+  }
+}
