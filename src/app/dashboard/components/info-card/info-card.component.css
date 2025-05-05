@@ -59,4 +59,36 @@
   border-radius: 15px;
   overflow: hidden;
   z-index: 1;
+  align-items: baseline;
+}
+
+.card__info__col {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: end;
+}
+
+.card__info__title {
+  margin: 0;
+}
+
+.card__info__current {
+  font-size: 1.6rem;
+  font-weight: 200;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.card__info__menu,
+.card__info__past {
+  color: var(--navy-200);
+  margin: 0;
+  white-space: nowrap;
+}
+
+.card__info__menu {
+  display: block;
+  font-size: 2rem;
+  text-align: right;
 }

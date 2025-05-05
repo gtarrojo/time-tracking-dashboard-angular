@@ -7,13 +7,15 @@
     />
   </div>
   <section class="card__info">
-    <div class="card__container__col">
-      <p>{{ activity.title }}</p>
-      <p>{{ activity.timeframes[selectedTimeframe].current }}hrs</p>
+    <div class="card__info__col">
+      <p class="card__info__title">{{ activity.title }}</p>
+      <p class="card__info__current">
+        {{ activity.timeframes[selectedTimeframe].current }}hrs
+      </p>
     </div>
-    <div class="card__container__col">
-      <a href="">...</a>
-      <p>
+    <div class="card__info__col">
+      <a class="card__info__menu" href="">...</a>
+      <p class="card__info__past">
         Last
         {{
           [
@@ -26,7 +28,7 @@
               : ""
           ]
         }}
-        - {{ activity.timeframes[selectedTimeframe].previous }}hrs
+        - {{ activity.timeframes[selectedTimeframe].previous }} hrs
       </p>
     </div>
   </section>
